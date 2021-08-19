@@ -1,0 +1,57 @@
+@api = http://localhost:3003/api/auth
+
+@tokengod = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjAyLCJpYXQiOjE2MjkzMjYxMzMsImV4cCI6MTYyOTQxMjUzM30.TweJ5lddjOlBDrCJkmQmsP19SRkca--5Q1isf5E17l0
+
+@tokenusr = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjA0LCJpYXQiOjE2Mjg4ODM0NjYsImV4cCI6MTYyODk2OTg2Nn0.koSPUx8qUVEMxkfmk00i8O6g1rZLpPtpl1reiDjF04Q
+
+@tokencns = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjAzLCJpYXQiOjE2Mjg5MDExMTEsImV4cCI6MTYyODk4NzUxMX0.5qWKt5rRroDXXaa2NxCFtPULKbg-lcAjNL373K0Tz-k
+
+POST {{api}}/signup
+x-access-token: {{tokengod}}
+Content-Type: application/json; charset=utf-8
+
+{
+  "usrname": "Derek",
+  "username": "drangel43",
+  "pass": "curiosidad",
+  "userlevel": "admin", 
+  "image": "1231",
+  "status": "1",
+  "area": "Desarrollo"
+}
+###Insertar un usuario
+
+POST {{api}}/signin
+Content-Type: application/json; charset=utf-8
+
+{
+  "username": "lrangel",
+  "pass": "aprender"
+}
+###loggear un usuario
+
+
+GET  {{api}}/listUsers
+# Content-Type: application/json; charset=utf-8
+
+###Lista de todos los usuarios
+
+GET {{api}}/lrangel
+# Content-Type: application/json; charset=utf-8
+
+###MUestra un usaurio
+
+POST {{api}}/updateUsr
+# x-access-token: {{tokengod}}
+Content-Type: application/json; charset=utf-8
+
+{
+  "id": 602,
+  "name": "Luis Fernando",
+  "pass": "justicia",
+  "userlevel": "god", 
+  "image": "77777",
+  "status": "1",
+  "area": "Developer"
+}
+###Edita un usaurio
