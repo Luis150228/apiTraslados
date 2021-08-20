@@ -8,6 +8,7 @@ import swaggerUI from 'swagger-ui-express';
 import { options } from './swaggerOptions';
 import trasladosRoutes from './routes/traslados.routes';
 import authRoutes from './routes/auth.routes';
+import elementsRoutes from './routes/elements.routes'
 
 const specs = swaggerJSDoc(options);
 
@@ -30,6 +31,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/traslados', trasladosRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/elements', elementsRoutes);
 
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(specs));
 

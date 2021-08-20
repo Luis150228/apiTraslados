@@ -1,0 +1,59 @@
+@api = http://localhost:3001/api/elements
+GET {{api}}/multas
+# x-access-token: {{token}}
+###Mostrar Rangos de multas
+
+GET {{api}}/umas
+# x-access-token: {{token}}
+###Mostrar valores de UMAS
+
+GET {{api}}/valores/imp_fraccion
+///imp_fraccion || imp_division || valores
+# x-access-token: {{token}}
+###Mostrar valores por tipo
+
+GET {{api}}/diasInh
+///imp_fraccion || imp_division || valores
+# x-access-token: {{token}}
+###Mostrar los dias de asueto
+
+POST {{api}}/multas
+# x-access-token: {{token}}
+Content-Type: application/json; charset=utf-8
+
+{
+    "imp_multa": "152.32",
+    "rango": "41 A 60"
+}
+###
+
+POST {{api}}/umas
+# x-access-token: {{token}}
+Content-Type: application/json; charset=utf-8
+
+{
+    "valor": "152.32",
+    "opcion": "10"
+}
+###
+
+POST {{api}}/valores
+# x-access-token: {{token}}
+Content-Type: application/json; charset=utf-8
+
+{
+    "valor": "101.12",
+    "idv": "2"
+}
+###
+POST {{api}}/diasInh
+# x-access-token: {{token}}
+Content-Type: application/json; charset=utf-8
+
+{
+    "id" : "1",
+    "descripcion" : "Año nuevo",
+    "fecha_inicio" : "2021-01-01",
+    "fecha_fin" : "2021-01-01"
+}
+###

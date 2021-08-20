@@ -1,4 +1,4 @@
-@api = http://localhost:3003/api/auth
+@api = http://localhost:3001/api/auth
 
 @tokengod = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjAyLCJpYXQiOjE2MjkzMjYxMzMsImV4cCI6MTYyOTQxMjUzM30.TweJ5lddjOlBDrCJkmQmsP19SRkca--5Q1isf5E17l0
 
