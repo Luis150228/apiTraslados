@@ -7,15 +7,15 @@
 @tokencns = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NjAzLCJpYXQiOjE2Mjg5MDExMTEsImV4cCI6MTYyODk4NzUxMX0.5qWKt5rRroDXXaa2NxCFtPULKbg-lcAjNL373K0Tz-k
 
 POST {{api}}/signup
-x-access-token: {{tokengod}}
+# x-access-token: {{tokengod}}
 Content-Type: application/json; charset=utf-8
 
 {
-  "usrname": "Derek",
-  "username": "drangel43",
-  "pass": "curiosidad",
-  "userlevel": "admin", 
-  "image": "1231",
+  "usrname": "lrangel",
+  "username": "lrangel",
+  "pass": "aprender",
+  "userlevel": "god", 
+  "image": "77777",
   "status": "1",
   "area": "Desarrollo"
 }

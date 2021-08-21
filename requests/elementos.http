@@ -51,9 +51,9 @@ POST {{api}}/diasInh
 Content-Type: application/json; charset=utf-8
 
 {
-    "id" : "1",
-    "descripcion" : "Año nuevo",
-    "fecha_inicio" : "2021-01-01",
-    "fecha_fin" : "2021-01-01"
+    "id" : "19",
+    "descripcion" : "as",
+    "fecha_inicio" : "2023-04-01",
+    "fecha_fin" : "2023-04-01"
 }
 ###
